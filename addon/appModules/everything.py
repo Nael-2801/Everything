@@ -25,6 +25,9 @@ _("""# The following line enables the announcement of column names in Everything
 		self.readConfigFile(self.file)
 	
 	def event_gainFocus(self, obj, nextHandler):
+		if obj.role == controlTypes.Role.LIST and obj.windowClassName == 'SysListView32':
+			if obj.firstChild != controlTypes.Role.LISTITEM:
+				obj.name = _("No result found")
 		if obj.role == controlTypes.Role.LISTITEM and obj.windowClassName == 'SysListView32':
 			#get the value of all columns
 			o=obj.firstChild
