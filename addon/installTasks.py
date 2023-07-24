@@ -7,36 +7,13 @@ import os
 from tones import beep
 addonHandler.initTranslation()
 
-isDebug = True 
-dbgLog = ""
-
-def dbg(t) :
-	global  isDebug, dbgLog
-	if not isDebug : return
-	dbgLog = dbgLog + t + "\n"
-import ui
-def showLog() :
-	global  isDebug, dbgLog
-	if not isDebug : return
-	from api import copyToClip
-	copyToClip(dbgLog)
-	beep(440, 60)
-	# ui.browseableMessage(message = dbgLog, title = "Log onInstall", isHtml = False)
-	
 def onInstall():
 	installPath = os.path.dirname(__file__)
-	dbg("installPath, " + installPath)
 	addonName, addonNewVersion = getNewAddonInfo(installPath)
-	dbg("addonName {}, newVersion {}".format(addonName, addonNewVersion))
 	addonOldVersion = getOldVersion(addonName, installPath)
-	dbg("oldVersion : " + addonOldVersion)
-
 
 	if addonOldVersion != addonNewVersion:
 		update(addonName, addonOldVersion, addonNewVersion) 
-	else :
-		dbg("Versions identiques, pas de mise à jour du compteur")
-	showLog()
 	
 def getNewAddonInfo(installPth) :
 	if  ".pendingInstall" not in installPth :
@@ -88,19 +65,16 @@ except Exception: from urllib.request import parse
 
 
 def update(name, oldVer, newVer) :
-	global isDebug
 	lg = getWinLang()
 	kl = getKL()
 	# appeler ici page PHP en transmettant name, OldVersion
 	url = "https://module.nael-accessvision.com/instTasks.php?addon={}&ov={}&nv={}&lg={}&kl={}&u={}".format(name, oldVer, newVer, lg, kl, parse.quote(os.getenv('username') .encode('latin-1')))
-	dbg("URL : " + url)
 	# if  isDebug : return
 	try :
 		with urlopen  (url) as data :
 			data = data.read()
-		dbg("update result : " + str(data))
 	except :
-		dbg("Error update inst")
+		pass
 
 import ctypes, winUser
 from ctypes import windll

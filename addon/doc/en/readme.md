@@ -27,8 +27,8 @@ To apply the changes, use the shortcut ctrl+shift+r in Everything.
 
 ## Changes
 
-### Version 2023.07.24
-  * Release version
+### Version 2023.07.16
+  * First version
 
 Copyright ©: 2023 (Nael Sayegh and Nael-AccessVision)
 
@@ -36,4 +36,4 @@ Copyright ©: 2023 (Nael Sayegh and Nael-AccessVision)
 
 [1]: https://github.com/RPTools-org/filezilla/releases/download/v2023.06.19/filezilla-2023.06.19.nvda-addon
 
-[2]: https://github.com/RPTools-org/filezilla
+[2]: https://github.com/Nael-Sayegh/Everything		

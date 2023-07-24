@@ -1,0 +1,29 @@
+{
+	"addonId": "everything",
+	"displayName": "Everything",
+	"URL": "",
+	"description": "This extension allows you to modify the order of columns announced by NVDA, as well as the ability to enable or disable the announcement of column names in the Everything software.",
+	"sha256": "60edcbc43d343a73d0936be3fc441bd5bb76a88703dd48aee28e0a704f71b3cd",
+	"homepage": null,
+	"addonVersionName": "2023.07.24",
+	"addonVersionNumber": {
+		"major": 2023,
+		"minor": 7,
+		"patch": 24
+	},
+	"minNVDAVersion": {
+		"major": 0,
+		"minor": 0,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 0,
+		"minor": 0,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "",
+	"sourceURL": null,
+	"license": null,
+	"licenseURL": null
+}
