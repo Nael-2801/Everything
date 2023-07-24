@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""This extension allows you to modify the order of columns announced by NVDA, as well as the ability to enable or disable the announcement of column names in the Everything software."""),
 	# version
-	"addon_version": "2023.07.16",
+	"addon_version": "2023.07.24",
 	# Author(s)
 	"addon_author": "Nael Sayegh <infos@nael-accessvision.com>",
 	# URL for the add-on documentation support

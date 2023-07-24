@@ -27,7 +27,7 @@ Pour que les modifications prennent effet, effectuer le raccourci ctrl+shift+r d
 
 ## Changements
 
-### Version 2023.07.16
+### Version 2023.07.24
   * Première version
 
 Copyright ©: 2023 (Nael Sayegh et Nael-Accessvision)
