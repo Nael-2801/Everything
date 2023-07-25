@@ -34,6 +34,6 @@ Copyright ©: 2023 (Nael Sayegh and Nael-AccessVision)
 
 <!-- links section -->
 
-[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2023.07.24/everything-2023.07.24.nvda-addon
+[1]: https://github.com/RPTools-org/filezilla/releases/download/v2023.06.19/filezilla-2023.06.19.nvda-addon
 
-[2]: https://github.com/Nael-Sayegh/Everything
+[2]: https://github.com/Nael-Sayegh/Everything		
