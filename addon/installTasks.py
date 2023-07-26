@@ -19,7 +19,6 @@ def getNewAddonInfo(installPth) :
 	if  ".pendingInstall" not in installPth :
 		installPth = installPth + ".pendingInstall"
 	newManifest = installPth + "\\manifest.ini"
-	dbg("newManifest " + newManifest)
 	if  not os.path.exists(newManifest) :
 		return "none", "0.0.0"
 	try :
@@ -50,7 +49,6 @@ def getOldVersion(addName, installPth) :
 	try :
 		for a in addonHandler.getAvailableAddons():
 			if a.name == addName :
-				# dbg("a.name : " + a.name)
 				return a.version
 	except : pass
 
