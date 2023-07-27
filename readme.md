@@ -27,7 +27,7 @@ To apply the changes, use the shortcut ctrl+shift+r in Everything.
 
 ## Changes
 
-### Version 2023.07.16
+### Version 2023.07.24
   * First version
 
 Copyright ©: 2023 (Nael Sayegh and Nael-AccessVision)
