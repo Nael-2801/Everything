@@ -1,4 +1,5 @@
 addon/doc/*.cs
+addon/doc/en/
 *_docHandler.py
 *.html
 manifest.ini
