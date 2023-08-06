@@ -47,3 +47,10 @@ jobs:
           remote_path: '/var/www/nvda/addons/addons/everything'
           sftp_only: true
           password: ${{ secrets.MDP_SFTP }}
+      - name: add file in release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            *.nvda-addon
