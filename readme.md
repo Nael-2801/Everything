@@ -24,7 +24,7 @@ Once finished, click on OK.
 When the Everything software is open, the keyboard shortcut Ctrl+Shift+O allows you to directly open the extension's settings panel. Make your changes and click on OK to confirm. The changes take effect immediately.
 
 ## Changes
-### Version ...
+### Version 2023.08.09
   * Adding a settings panel to modify the order of column appearance and the announcement of column names.
   * Removal of the keyboard shortcut for reloading the configuration, which is no longer necessary, and modification of the keyboard shortcut for opening the settings file to open the settings panel.
   * Updating the documentation to adapt it to the changes in the new version.
