@@ -2,38 +2,40 @@
 
 * Author: Nael Sayegh
 * URL: [infos@nael-accessvision.com](mailto:infos@nael-accessvision.com)
-* Download the [stable version][1] ;
-<!-- * Download the [Latest version on Nael-AccessVision.com](https://) ; -->
-* NVDA Compatibility: 2021.3 and above ;
-* [Source code on GitHub][2] ;
+* Download the [stable version][1];
+* NVDA Compatibility: 2021.3 and above;
+* [Source code on GitHub][2];
 
-# Description
+# Presentation
 
-This extension adds the ability to change the position of column information announced by NVDA in Everything, such as modification date, size, or path, as well as the ability to enable or disable the announcement of column names.
+This extension allows you to modify the order of the information in a file announced by NVDA in the list of search results, as well as to activate or deactivate the announcement of column names in the Everything software.
 
 ## How it works
 
-Once this extension is installed, the default announcement of columns is as follows: name, date, size, path.
-To modify this order, use the shortcut ctrl+shift+O.
-A file will open, and to change the order, scroll down to the line starting with lines =
-After the equal sign, you can move the variables to change the order in which the columns appear.
-Make sure to leave a space between each variable when modifying them.
-By default, the announcement of columns is enabled. If you want to disable it, scroll down in the file to the line sayColumn=True.
-To disable it, write False after the equal sign.
-If you want to re-enable it, write the number True after the equal sign.
-Please note that the capitalization is important when changing this value.
-Once you are done, save the modifications and close the file.
-To apply the changes, use the shortcut ctrl+shift+r in Everything.
+Once this extension is installed, by default, the announcement of the columns is as follows: name, date, size, path.
+To change the order of the columns, go to the NVDA preferences menu and scroll down to the Everything section.
+In this section, you will find a checkbox that allows you to enable or disable the announcement of column names.
+Then, you will find 3 lists where you can choose each time the element you want to appear in order.
+After these lists, you will also find a button that allows you to return to the default settings.
+Once finished, click on OK.
+
+### Keyboard Shortcuts
+
+When the Everything software is open, the keyboard shortcut Ctrl+Shift+O allows you to directly open the extension's settings panel. Make your changes and click on OK to confirm. The changes take effect immediately.
 
 ## Changes
+### Version ...
+  * Adding a settings panel to modify the order of column appearance and the announcement of column names.
+  * Removal of the keyboard shortcut for reloading the configuration, which is no longer necessary, and modification of the keyboard shortcut for opening the settings file to open the settings panel.
+  * Updating the documentation to adapt it to the changes in the new version.
 
 ### Version 2023.07.24
   * First version
 
-Copyright ©: 2023 (Nael Sayegh and Nael-AccessVision)
+Copyright ©: 2023 (Nael Sayegh and Nael-Accessvision)
 
 <!-- links section -->
 
-[1]: https://github.com/RPTools-org/filezilla/releases/download/v2023.06.19/filezilla-2023.06.19.nvda-addon
+[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2023.08.09/everything-2023.08.09.nvda-addon
 
-[2]: https://github.com/Nael-Sayegh/Everything		
+[2]: https://github.com/Nael-Sayegh/Everything
