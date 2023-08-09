@@ -24,10 +24,10 @@ Une fois fini cliquer sur ok.
 Quand le logiciel Everything est ouvert, le raccourci ctrl+shift+o permet d'ouvrir le panneau de paramètres de l'extension. Vous pouvez faire vos modifications et valider sur ok. Les paramètres prennent tout de suite effet.
 
 ## Changements
-### Version ...
-  * Adding a settings panel to modify the order of column appearance and the announcement of column names.
-  * Removal of the keyboard shortcut for reloading the configuration, which is no longer necessary, and modification of the keyboard shortcut for opening the settings file to open the settings panel.
-  * Updating the documentation to adapt it to the changes in the new version.
+### Version 2023.08.09
+  * Ajout d'un panneau de paramètres pour modifier l'ordre d'apparition des colonnes et l'annonce des noms de colonnes.
+  * Suppression du raccourci clavier pour recharger la configuration, qui n'est plus nécessaire, et modification du raccourci clavier pour ouvrir les paramètres
+  * Mise à jour de la documentation pour l'adapter aux changements de cette version
 
 ### Version 2023.07.24
   * Première version
