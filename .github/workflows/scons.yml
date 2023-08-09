@@ -1,8 +1,8 @@
 name: scons
 on: 
   push:
-    tags: ["*"]
-    branches: [main]
+    tags: 
+      - '*'
 
 jobs:
   scons: 
@@ -24,7 +24,7 @@ jobs:
         run: scons
       - name: get the last tag
         id: get-latest-tag
-        run: echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
       - name: Create a file with the version number
         run: touch version_everything.txt && echo '${{ steps.get-latest-tag.outputs.tag }}' >> version_everything.txt
       - name: Upload the nvda add-on 
