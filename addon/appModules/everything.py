@@ -18,7 +18,7 @@ class AppModule(appModuleHandler.AppModule):
 				obj.name = _("No result found")
 		if obj.role == controlTypes.Role.LISTITEM and obj.windowClassName == 'SysListView32':
 			#get the value of all columns
-			self.column = [config.conf["everything"]["column1"]],config.conf["everything"["column2"],config.conf["everything"]["column3"]]
+			self.column = [config.conf["everything"]["column1"],config.conf["everything"]["column2"],config.conf["everything"]["column3"]]
 			self.sayColumn=config.conf["everything"]["sayColumn"]
 			o=obj.firstChild
 			listChildren=[]
@@ -36,9 +36,10 @@ class AppModule(appModuleHandler.AppModule):
 					newobj = newobj+listChildren[1]
 					count=count+1
 				elif order == 'size':
-					if self.sayColumn:
-						newobj=newobj+_("Size: ")
-					newobj = newobj+listChildren[2]
+					if listChildren[2] != "":
+						if self.sayColumn:
+							newobj=newobj+_("Size: ")
+						newobj = newobj+listChildren[2]
 					count=count+1
 				elif order == 'date':
 					if self.sayColumn:
@@ -47,6 +48,7 @@ class AppModule(appModuleHandler.AppModule):
 					count=count+1
 				if count < 3:
 					newobj=newobj+"; "
+			newobj=newobj.replace(" ;","")
 			obj.name = newobj
 		nextHandler()
 

@@ -24,6 +24,10 @@ Une fois fini cliquer sur ok.
 Quand le logiciel Everything est ouvert, le raccourci ctrl+shift+o permet d'ouvrir le panneau de paramètres de l'extension. Vous pouvez faire vos modifications et valider sur ok. Les paramètres prennent tout de suite effet.
 
 ## Changements
+
+### Version 2023.10.09
+  * Correction d'un problème d'affichage quand la colonne taille n'était pas affiché dans la liste des résultats
+
 ### Version 2023.08.09
   * Ajout d'un panneau de paramètres pour modifier l'ordre d'apparition des colonnes et l'annonce des noms de colonnes.
   * Suppression du raccourci clavier pour recharger la configuration, qui n'est plus nécessaire, et modification du raccourci clavier pour ouvrir les paramètres
@@ -36,7 +40,7 @@ Copyright ©: 2023 (Nael Sayegh et Nael-Accessvision)
 
 <!-- links section -->
 
-[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2023.08.09/everything-2023.08.09.nvda-addon
+[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2023.10.09/everything-2023.10.09.nvda-addon
 
 [2]: https://github.com/Nael-Sayegh/Everything
 
