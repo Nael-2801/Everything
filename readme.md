@@ -25,6 +25,10 @@ When the Everything software is open, the keyboard shortcut Ctrl+Shift+O allows 
 
 ## Changes
 
+### Version 2023.11.11
+
+  * Removal of the update system, updates will no longer be offered by the extension. Instead, use the addonUpdater extension on the NVAccess add-on store channel or visit the addonstore update tab.
+
 ### Version 2023.10.09
 
   * Correction of a display issue when the size column was not displayed in the list of results.
@@ -41,6 +45,6 @@ Copyright ©: 2023 (Nael Sayegh and Nael-Accessvision)
 
 <!-- links section -->
 
-[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2023.10.09/everything-2023.10.09.nvda-addon
+[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2023.11.11/everything-2023.11.11.nvda-addon
 
 [2]: https://github.com/Nael-Sayegh/Everything

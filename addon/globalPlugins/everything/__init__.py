@@ -17,7 +17,6 @@ confspecs = {
 }
 
 config.conf.spec["everything"] = confspecs
-from . import update_everything as update
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__ (self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()

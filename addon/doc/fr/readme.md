@@ -25,6 +25,10 @@ Quand le logiciel Everything est ouvert, le raccourci ctrl+shift+o permet d'ouvr
 
 ## Changements
 
+### Version 2023.11.11
+
+  * Suppression du système de mise à jour, les mises à jours ne seront plus proposées par l'extension, utilisez à la place l'extension addonUpdater sur le canal NVAccess ou rendez-vous dans l'addonstore onglet mise à jour
+
 ### Version 2023.10.09
   * Correction d'un problème d'affichage quand la colonne taille n'était pas affiché dans la liste des résultats
 
@@ -40,7 +44,7 @@ Copyright ©: 2023 (Nael Sayegh et Nael-Accessvision)
 
 <!-- links section -->
 
-[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2023.10.09/everything-2023.10.09.nvda-addon
+[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2023.11.11/everything-2023.11.11.nvda-addon
 
 [2]: https://github.com/Nael-Sayegh/Everything
 
