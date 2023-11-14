@@ -84,6 +84,27 @@ class Everything(SettingsPanel):
 			)
 		)
 		self.reset.Bind(wx.EVT_BUTTON, self.on_reset)
+
+		updateGroupSizer = wx.StaticBoxSizer(wx.VERTICAL, self, label=_("Update"))
+		updateGroupBox = updateGroupSizer.GetStaticBox()
+		updateGroup = gui.guiHelper.BoxSizerHelper(self, sizer=updateGroupSizer)
+		sHelper.addItem(updateGroup)
+
+		self.autoUpdate = updateGroup.addItem(
+			wx.CheckBox(self,
+			# Translator: A checkbox label in the settings interface
+			label=_("Automatically search for updates")
+		)
+		)
+		self.autoUpdate.SetValue(config.conf["everything"]["autoUpdate"])
+
+		self.searchUpdate = updateGroup.addItem(
+			wx.Button(self,
+			# Translator: A button label in the settings panel
+			label=_("Search for an update now")
+		)
+		)
+		self.searchUpdate.Bind(wx.EVT_BUTTON, self.on_searchUpdate)
 	
 	def on_reset(self, evt):
 		self.list1.SetSelection(0)
@@ -92,6 +113,10 @@ class Everything(SettingsPanel):
 		self.sayColumn.SetValue(True)
 		# Translator: Message says when you click on the return to default settings button in the settings panel
 		ui.message(_("Settings reset to default"))
+
+	def on_searchUpdate(self, evt):
+		from . import update_everything as update
+		update.verifUpdate(True)
 
 	def onSave(self):
 		valu1 = self.list1.GetSelection()
@@ -108,4 +133,5 @@ class Everything(SettingsPanel):
 			config.conf["everything"]["column2"] = self.column[valu2][0]
 			config.conf["everything"]["column3"] = self.column[valu3][0]
 		config.conf["everything"]["sayColumn"] = self.sayColumn.GetValue()
+		config.conf["everything"]["autoUpdate"] = self.autoUpdate.GetValue()
 
