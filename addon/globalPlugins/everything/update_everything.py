@@ -30,7 +30,7 @@ def updateAvailable():
 def installupdate():
 	temp=os.environ.get('TEMP')
 	file=temp + "\\"+addonInfos["name"]+"_" + oversion + ".nvda-addon"
-	url=f"https://module.nael-accessvision.com/addons/addons/"+addonInfos["name"]+"/"+addonInfos["name"]+"-{oversion}.nvda-addon"
+	url=f"https://module.nael-accessvision.com/addons/addons/{addonInfos['name']}/{addonInfos['name']}-{oversion}.nvda-addon"
 	urllib.request.urlretrieve(url, file)
 	curAddons = []
 	for addon in addonHandler.getAvailableAddons():
