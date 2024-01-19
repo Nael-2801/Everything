@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""This extension allows you to modify the order of the information in a file announced by NVDA in the list of search results, as well as to activate or deactivate the announcement of column names in the Everything software."""),
 	# version
-	"addon_version": "2023.12.22",
+	"addon_version": "2024.01.20",
 	# Author(s)
 	"addon_author": "Nael Sayegh <infos@nael-accessvision.com>",
 	# URL for the add-on documentation support
@@ -56,8 +56,8 @@ addon_info = {
 # pythonSources = ["addon/globalPlugins/*.py"]
 # For more information on SCons Glob expressions please take a look at:
 # https://scons.org/doc/production/HTML/scons-user/apd.html
-pythonSources = ["addon/globalPlugins/*.py",
-"addon/appModules/*.py",
+pythonSources = ["addon/appModules/*.py",
+"addon/globalPlugins/everything/*.py",
 "addon/*.py"]
 
 # Files that contain strings for translation. Usually your python sources

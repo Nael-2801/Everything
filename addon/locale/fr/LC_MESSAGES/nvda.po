@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'everything' '2023.07.14'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-08-09 11:16+0200\n"
-"PO-Revision-Date: 2023-08-09 11:18+0200\n"
+"POT-Creation-Date: 2024-01-08 08:51+0100\n"
+"PO-Revision-Date: 2024-01-08 09:05+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,6 +18,26 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.3.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+
+#: addon\appModules\everything.py:18
+msgid "No result found"
+msgstr "Aucun résultat trouvé"
+
+#: addon\appModules\everything.py:35
+msgid "Path: "
+msgstr "Chemin : "
+
+#: addon\appModules\everything.py:41
+msgid "Size: "
+msgstr "Taille : "
+
+#: addon\appModules\everything.py:46
+msgid "Date: "
+msgstr "Date : "
+
+#: addon\appModules\everything.py:55
+msgid "Open the settings panel of the Everything extension"
+msgstr "Ouvrir le panneau de paramètre de l’extension Everything"
 
 #. Translator: A list option in the parameter panel
 #: addon\globalPlugins\everything\settings_gui.py:18
@@ -91,14 +111,14 @@ msgid ""
 "You have selected the same element several times in the display "
 "organization. You only need to select an element once in the column display."
 msgstr ""
-"Vous avez sélectionné plusieurs fois le même élément dans l'organisation de "
-"l'affichage. Il ne faut sélectionné qu'une seule fois un élément quand vous "
+"Vous avez sélectionné plusieurs fois le même élément dans l’organisation de "
+"l’affichage. Il ne faut sélectionné qu’une seule fois un élément quand vous "
 "faites votre choix."
 
 #. Translator: Title of error window after parameter validation
 #: addon\globalPlugins\everything\settings_gui.py:130
 msgid "Display selection error"
-msgstr "Erreur de sélection de l'affichage"
+msgstr "Erreur de sélection de l’affichage"
 
 #: addon\globalPlugins\everything\update_everything.py:22
 #, python-format
@@ -108,106 +128,50 @@ msgstr "Mise à jour de %s version %s"
 #: addon\globalPlugins\everything\update_everything.py:23
 #, python-format
 msgid ""
-"%s version %s is available. Would you like to update now? You can see the "
-"new features by clicking on the help button in the add-on manager."
+"%s version %s is available. Would you like to update now? You can view the "
+"changes by clicking on the What's New button and scrolling down to Changes."
 msgstr ""
 "%s version %s est disponible. Voulez-vous mettre à jour maintenant? Vous "
-"pourrez voir les nouveautés en cliquant sur le bouton aide dans le "
-"gestionnaire d'extension."
+"pouvez voir les changements en cliquant sur le bouton quoi de neuf et "
+"descendre jusqu’à changements."
 
-#: addon\globalPlugins\everything\update_everything.py:62
+#: addon\globalPlugins\everything\update_everything.py:58
 msgid "No update is available."
-msgstr "Aucune mise à jour n'est disponible."
+msgstr "Aucune mise à jour n’est disponible."
 
-#: addon\globalPlugins\everything\update_everything.py:67
+#: addon\globalPlugins\everything\update_everything.py:63
 #, python-format
 msgid "%s is enabled."
 msgstr "%s est activée."
 
-#: addon\globalPlugins\everything\update_everything.py:70
+#: addon\globalPlugins\everything\update_everything.py:66
 #, python-format
 msgid "%s is disabled."
 msgstr "%s est désactivée."
 
-#: addon\appModules\everything.py:19
-msgid "No result found"
-msgstr "Aucun résultat trouvé"
+#. Translators: This is a label of a button appearing
+#: addon\globalPlugins\everything\update_everything.py:81
+msgid "&Yes"
+msgstr "&Oui"
 
-#: addon\appModules\everything.py:36
-msgid "Path: "
-msgstr "Chemin: "
+#. Translators: This is a label of a button appearing
+#: addon\globalPlugins\everything\update_everything.py:85
+msgid "&No"
+msgstr "&Non"
 
-#: addon\appModules\everything.py:41
-msgid "Size: "
-msgstr "Taille: "
-
-#: addon\appModules\everything.py:46
-msgid "Date: "
-msgstr "Date: "
-
-#: addon\appModules\everything.py:54
-msgid "Open the settings panel of the Everything extension"
-msgstr "Ouvrir le panneau de paramètre de l'extension Everything"
+#: addon\globalPlugins\everything\update_everything.py:87
+msgid "Wha&t's new"
+msgstr "&Quoi de neuf"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#: buildVars.py:26
+#: addon\buildVars.py:26 buildVars.py:26
 msgid ""
 "This extension allows you to modify the order of the information in a file "
 "announced by NVDA in the list of search results, as well as to activate or "
 "deactivate the announcement of column names in the Everything software."
 msgstr ""
-"Cette extension permet de modifier l'ordre des informations d'un fichier "
-"énoncé par NVDA dans la liste des résultats d'une recherche ainsi que la "
-"possibilité d'activer ou désactiver  l'annonce du nom des colonnes dans le "
+"Cette extension permet de modifier l’ordre des informations d’un fichier "
+"énoncé par NVDA dans la liste des résultats d’une recherche ainsi que la "
+"possibilité d’activer ou désactiver  l’annonce du nom des colonnes dans le "
 "logiciel Everything."
-
-#~ msgid ": checks for module updates manually"
-#~ msgstr ": Rechercher une mise à jour du module manuellement"
-
-#~ msgid ": enable/disable automatic update checking"
-#~ msgstr ": Active/désactive la recherche de mise à jour automatique"
-
-#~ msgid "Automatic update"
-#~ msgstr "La mise à jour automatique"
-
-#~ msgid ""
-#~ "#This file allows organizing the display of columns in Everything.\n"
-#~ "# Move the variables @path @size @date to organize the column display. "
-#~ "Please make sure to separate each element with a space.\n"
-#~ msgstr ""
-#~ "#Ce fichier permet d'organiser l'affichage des colonnes dans Everything.\n"
-#~ "#Déplacez les variables @path @size @date pour organiser l'affichage des "
-#~ "colonnes. Assurez-vous de séparer chaque élément par un espace.\n"
-
-#~ msgid ""
-#~ "# The following line enables the announcement of column names in "
-#~ "Everything.\n"
-#~ "# Write False after the equal sign to disable it or True to enable it. "
-#~ "Please note that the capitalization is important.\n"
-#~ msgstr ""
-#~ "# La ligne suivante permet d'activer ou désactiver l'annonce des colonnes "
-#~ "dans Everything.\n"
-#~ "# Écrivez False après le signe égal pour désactiver l'annonce des "
-#~ "colonnes ou True pour l'activer. Notez que la majuscule est importante.\n"
-
-#~ msgid "Reload the configuration file of the Everything extension"
-#~ msgstr "Recharger le fichier de configuration de l'extension Everything"
-
-#~ msgid "Reloaded configuration."
-#~ msgstr "Configuration rechargée"
-
-#~ msgid ""
-#~ "This extension allows you to modify the order of columns announced by "
-#~ "NVDA, as well as the ability to enable or disable the announcement of "
-#~ "column names in the Everything software."
-#~ msgstr ""
-#~ "Cette extension permet de modifier l'ordre des colonnes annoncé par NVDA "
-#~ "ainsi que la possibilité d'activer ou désactiver l'annonce des noms des "
-#~ "colonnes dans le logiciel Everything."
-
-#~ msgid "Everything: Open the extension's configuration file"
-#~ msgstr "Everything: Ouvre le fichier de configuration de l'extension"
-
-#~ msgid "Everything: Reload the extension's configuration file"
-#~ msgstr "Everything: Recharge le fichier de configuration de l'extension"
