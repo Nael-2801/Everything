@@ -1,11 +1,11 @@
-name: scons
+name: Upload file for update
 on: 
   push:
     tags: 
       - '*'
 
 jobs:
-  scons: 
+  sftp: 
     runs-on: ubuntu-latest
     steps:
       - name: Check out source repository
@@ -13,11 +13,13 @@ jobs:
       - name: Set up Python environment
         uses: actions/setup-python@v4
         with:
-          python-version: 3.11
+          python-version: 3.9
       - name: Install scons
         run: pip install scons
       - name: install markdown
         run: pip install markdown
+      - name: Update package
+        run: sudo apt-get update
       - name: Install gettext
         run: sudo apt-get install gettext
       - name: Generating Addon
