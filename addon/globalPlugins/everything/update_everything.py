@@ -9,6 +9,8 @@ from logHandler import log
 import config
 import globalVars
 import ui
+import languageHandler
+
 addonHandler.initTranslation()
 
 baseDir = os.path.dirname(__file__) 
