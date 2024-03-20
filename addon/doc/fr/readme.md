@@ -25,6 +25,10 @@ Quand le logiciel Everything est ouvert, le raccourci ctrl+shift+o permet d'ouvr
 
 ## Changements
 
+### Version 2024.03.20
+
+  * Ajout de la compatibilité avec NVDA 2024.1
+
 ### Version 2023.12.22
 
   * Ajoute la compatibilité avec NVDA 2024.1
@@ -48,11 +52,11 @@ Quand le logiciel Everything est ouvert, le raccourci ctrl+shift+o permet d'ouvr
 ### Version 2023.07.24
   * Première version
 
-Copyright ©: 2023 (Nael Sayegh et Nael-Accessvision)
+Copyright ©: 2024 (Nael Sayegh et Nael-Accessvision)
 
 <!-- links section -->
 
-[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2023.12.22/everything-2023.12.22.nvda-addon
+[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2024.03.20/everything-2024.03.20.nvda-addon
 
 [2]: https://github.com/Nael-Sayegh/Everything
 
