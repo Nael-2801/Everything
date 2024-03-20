@@ -25,6 +25,10 @@ Quand le logiciel Everything est ouvert, le raccourci ctrl+shift+o permet d'ouvr
 
 ## Changements
 
+### Version 2024.03.21
+
+  * Correction d'une erreur lorsque l'on clique sur le bouton quoi de neuf dans le dialogue de mise à jour
+
 ### Version 2024.03.20
 
   * Ajout de la compatibilité avec NVDA 2024.1
