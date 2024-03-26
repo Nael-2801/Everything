@@ -116,7 +116,7 @@ class Everything(SettingsPanel):
 		ui.message(_("Settings reset to default"))
 
 	def on_searchUpdate(self, evt):
-		from . import update as update
+		from . import update
 		update.verifUpdate(True)
 
 	def onSave(self):
