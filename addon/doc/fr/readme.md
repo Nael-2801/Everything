@@ -25,6 +25,12 @@ Quand le logiciel Everything est ouvert, le raccourci ctrl+shift+o permet d'ouvr
 
 ## Changements
 
+### Version 2024.03.26
+
+  * Amélioration du système de mise à jour
+  * Correction d'une erreur lors des mises à jour
+  * Mise à jour de la traduction française
+
 ### Version 2024.03.21
 
   * Correction d'une erreur lorsque l'on clique sur le bouton quoi de neuf dans le dialogue de mise à jour
@@ -60,7 +66,7 @@ Copyright ©: 2024 (Nael Sayegh et Nael-Accessvision)
 
 <!-- links section -->
 
-[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2024.03.20/everything-2024.03.20.nvda-addon
+[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2024.03.26/everything-2024.03.26.nvda-addon
 
 [2]: https://github.com/Nael-Sayegh/Everything
 
