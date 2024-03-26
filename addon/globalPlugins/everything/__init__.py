@@ -3,6 +3,7 @@ import config
 import scriptHandler
 import gui
 import addonHandler
+from .consts import addonInfos
 
 addonHandler.initTranslation()
 
@@ -16,7 +17,7 @@ confspecs = {
 	"sayColumn": "boolean(default=True)",
 }
 
-config.conf.spec["everything"] = confspecs
+config.conf.spec[addonInfos['name']] = confspecs
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__ (self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()

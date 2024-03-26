@@ -1,34 +1,31 @@
-import core
 import os
 import urllib.request
-import addonHandler
-import gui
-import wx
 import datetime
-from logHandler import log
-import config
+import wx
 import globalVars
+import addonHandler
+import config
+import core
 import ui
 import languageHandler
+import gui
+from .consts import addonInfos, addon
 
 addonHandler.initTranslation()
-
-baseDir = os.path.dirname(__file__) 
-addon = os.path.join(baseDir, "..", "..") 
-addonInfos = addonHandler.Addon(addon).manifest
 
 time=datetime.datetime.now()
 week= int(time.strftime("%W"))
 
 def updateAvailable():
+	# Translators: title of a dialog box
 	title = _("Update of %s version %s") %(addonInfos["summary"], oversion)
+	# Translators: message to user to report a new version.
 	msg = _("%s version %s is available. Would you like to update now? You can view the changes by clicking on the What's New button and scrolling down to Changes.") %(addonInfos["summary"], oversion)
 	updateDialog(title=title, msg=msg).ShowModal()
 
 def installupdate():
-	temp=os.environ.get('TEMP')
-	file=temp + "\\"+addonInfos["name"]+"_" + oversion + ".nvda-addon"
-	url=f"https://module.nael-accessvision.com/addons/addons/{addonInfos['name']}/{addonInfos['name']}-{oversion}.nvda-addon"
+	file=os.environ.get('TEMP') + "\\"+addonInfos["name"] + ".nvda-addon"
+	url=f"https://module.nael-accessvision.com/addons/addons/{addonInfos['name']}/{addonInfos['name']}.nvda-addon"
 	urllib.request.urlretrieve(url, file)
 	curAddons = []
 	for addon in addonHandler.getAvailableAddons():
@@ -50,22 +47,17 @@ def installupdate():
 def verifUpdate(gesture=False):
 	global oversion
 	version = addonInfos["version"]
-	rversion = urllib.request.urlopen("https://module.nael-accessvision.com/addons/addons/"+addonInfos["name"]+"/version_"+addonInfos["name"]+".txt")
+	rversion = urllib.request.urlopen("https://module.nael-accessvision.com/addons/addons/"+addonInfos["name"]+"/version.txt")
 	tversion = rversion.read().decode()
 	oversion=tversion.replace("\n", "")
 	if version != oversion:
 		wx.CallAfter(updateAvailable)
 	else:
 		if gesture:
-			ui.message(_("No update is available."))
-
-def Param(param,message):
-	if not config.conf[addonInfos["name"]][param]:
-		config.conf[addonInfos["name"]][param]= True
-		ui.message(_("%s is enabled.") %(message))
-	else:
-		config.conf[addonInfos["name"]][param] = False
-		ui.message(_("%s is disabled.") %(message))
+			ui.message(
+				# Translators: message to user to report that no update is available.
+				_("No update is available.")
+			)
 
 if not globalVars.appArgs.secure and config.conf[addonInfos["name"]]["autoUpdate"] and (config.conf[addonInfos["name"]]["nbWeek"] != week or config.conf[addonInfos["name"]]["updateEveryStart"]):
 	verifUpdate()
@@ -80,13 +72,24 @@ class updateDialog(wx.Dialog):
 		text.SetLabel(msg)
 		bHelper = gui.guiHelper.ButtonHelper(wx.HORIZONTAL)
 		# Translators: This is a label of a button appearing
-		yes = bHelper.addButton(self, wx.ID_YES, label=_("&Yes"))
+		yes = bHelper.addButton(self, 
+			wx.ID_YES, 
+			# Translators: label of a button
+			label=_("&Yes")
+		)
 		yes.Bind(wx.EVT_BUTTON, lambda evt: installupdate())
 		yes.SetFocus()
 		# Translators: This is a label of a button appearing
-		no = bHelper.addButton(self, wx.ID_NO, label=_("&No"))
+		no = bHelper.addButton(self, 
+			wx.ID_NO, 
+			# Translators: label of a button
+			label=_("&No")
+		)
 		no.Bind(wx.EVT_BUTTON, self.onNo)
-		releaseNotes = bHelper.addButton(self, label=_("Wha&t's new"))
+		releaseNotes = bHelper.addButton(self, 
+			# Translators: label of a button
+			label=_("Wha&t's new")
+		)
 		releaseNotes.Bind(wx.EVT_BUTTON, self.onReleaseNotes)
 		sHelper.addDialogDismissButtons(bHelper)
 		self.EscapeId = wx.ID_NO
