@@ -25,6 +25,16 @@ When the Everything software is open, the keyboard shortcut Ctrl+Shift+O allows 
 
 ## Changes
 
+### Version 2024.03.26
+
+  * Translation update of the French text
+  * Improvement of the update system
+  * Error correction when proposing an update.
+
+### Version 2024.03.21
+
+  * Error correction when proposing an update.
+
 ### Version 2024.03.20
 
   * Adding compatibility with NVDA 2024.1
@@ -57,6 +67,6 @@ Copyright ©: 2024 (Nael Sayegh and Nael-Accessvision)
 
 <!-- links section -->
 
-[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2024.03.20/everything-2024.03.20.nvda-addon
+[1]: https://github.com/Nael-Sayegh/Everything/releases/download/2024.03.26/everything-2024.03.26.nvda-addon
 
 [2]: https://github.com/Nael-Sayegh/Everything

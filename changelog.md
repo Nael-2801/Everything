@@ -1,3 +1,5 @@
 ## What's new?
 
-  * Adding compatibility with NVDA 2024.1
+  * Translation update of the French text
+  * Improvement of the update system
+  * Error correction when proposing an update.
