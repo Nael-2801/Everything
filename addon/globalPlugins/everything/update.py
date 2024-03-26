@@ -9,12 +9,9 @@ import core
 import ui
 import languageHandler
 import gui
+from .consts import addonInfos
 
 addonHandler.initTranslation()
-
-baseDir = os.path.dirname(__file__) 
-addon = os.path.join(baseDir, "..", "..") 
-addonInfos = addonHandler.Addon(addon).manifest
 
 time=datetime.datetime.now()
 week= int(time.strftime("%W"))

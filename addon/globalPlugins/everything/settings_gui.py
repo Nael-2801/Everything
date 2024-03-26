@@ -8,6 +8,7 @@ import config
 import ui
 import addonHandler
 from logHandler import log
+from .consts import addonInfos
 
 addonHandler.initTranslation()
 
@@ -133,5 +134,5 @@ class Everything(SettingsPanel):
 			config.conf["everything"]["column2"] = self.column[valu2][0]
 			config.conf["everything"]["column3"] = self.column[valu3][0]
 		config.conf["everything"]["sayColumn"] = self.sayColumn.GetValue()
-		config.conf["everything"]["autoUpdate"] = self.autoUpdate.GetValue()
+		config.conf[addonInfos['name']]["autoUpdate"] = self.autoUpdate.GetValue()
 
