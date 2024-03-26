@@ -9,7 +9,7 @@ import core
 import ui
 import languageHandler
 import gui
-from .consts import addonInfos
+from .consts import addonInfos, addon
 
 addonHandler.initTranslation()
 
